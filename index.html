@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/Person">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,41 +10,46 @@
 <body>
     <div class="container">
         <header>
-            <h1>Muhammad Hamza</h1>
-            <h2>WordPress Developer</h2>
-            <p>Sargodha, Punjab, Pakistan</p>
+            <h1 itemprop="name">Muhammad Hamza</h1>
+            <h2 itemprop="jobTitle">WordPress Developer</h2>
+            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Sargodha</span>,
+                <span itemprop="addressRegion">Punjab</span>,
+                <span itemprop="addressCountry">Pakistan</span>
+            </p>
         </header>
 
         <section>
             <h3>Personal Details</h3>
             <ul>
-                <li>Email: <a href="mailto:mhamza191703@gmail.com">mhamza191703@gmail.com</a></li>
-                <li>Languages: Urdu, English</li>
-                <li>Portfolio: <a href="https://mhamza.online">https://mhamza.online</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/mdothamza">https://www.linkedin.com/in/mdothamza</a></li>
-                <li>GitHub: <a href="https://github.com/MuhammadHamza00">https://github.com/MuhammadHamza00</a></li>
-                <li>Leetcode: <a href="https://leetcode.com/M_Hamza000">https://leetcode.com/M_Hamza000</a></li>
+                <li>Email: <a href="mailto:mhamza191703@gmail.com" itemprop="email">mhamza191703@gmail.com</a></li>
+                <li>Languages: <span itemprop="knowsLanguage">Urdu</span>, <span itemprop="knowsLanguage">English</span></li>
+                <li>Portfolio: <a href="https://mhamza.online" itemprop="url">https://mhamza.online</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/mdothamza" itemprop="sameAs">https://www.linkedin.com/in/mdothamza</a></li>
+                <li>GitHub: <a href="https://github.com/MuhammadHamza00" itemprop="sameAs">https://github.com/MuhammadHamza00</a></li>
+                <li>Leetcode: <a href="https://leetcode.com/M_Hamza000" itemprop="sameAs">https://leetcode.com/M_Hamza000</a></li>
             </ul>
         </section>
 
         <section>
             <h3>Employment</h3>
-            <div class="job">
-                <h4>WordPress Developer</h4>
-                <p><em>Dec 2024 - Present | Soriic, Punjab, Pakistan</em></p>
+
+            <div class="job" itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
+                <h4 itemprop="name">WordPress Developer</h4>
+                <p><em>Dec 2024 - Present | <span itemprop="location">Soriic, Punjab, Pakistan</span></em></p>
                 <ul>
-                    <li>Developed websites using CMS platforms like WordPress.</li>
-                    <li>Taught JavaScript, focusing on core concepts and practical applications.</li>
-                    <li>Researched LLMs in E-Commerce for AI-driven solutions.</li>
+                    <li itemprop="description">Developed websites using CMS platforms like WordPress.</li>
+                    <li itemprop="description">Taught JavaScript, focusing on core concepts and practical applications.</li>
+                    <li itemprop="description">Researched LLMs in E-Commerce for AI-driven solutions.</li>
                 </ul>
             </div>
 
-            <div class="job">
-                <h4>Software Engineering Fellow</h4>
-                <p><em>Jul 2024 | Headstarter AI, Remote</em></p>
+            <div class="job" itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
+                <h4 itemprop="name">Software Engineering Fellow</h4>
+                <p><em>Jul 2024 | <span itemprop="location">Headstarter AI, Remote</span></em></p>
                 <ul>
-                    <li>Built AI Applications and APIs using Next.js, OpenAI API, Stripe API.</li>
-                    <li>Led 4+ Engineering Fellows using MVC Design Patterns.</li>
+                    <li itemprop="description">Built AI Applications and APIs using Next.js, OpenAI API, Stripe API.</li>
+                    <li itemprop="description">Led 4+ Engineering Fellows using MVC Design Patterns.</li>
                 </ul>
             </div>
         </section>
@@ -52,23 +57,27 @@
         <section>
             <h3>Projects</h3>
             <ul>
-                <li>HostBuddy Website for AI-Powered Startup</li>
-                <li>PBOX Enterprises Website for Entertainment Company</li>
-                <li>SanMiguel Urgent Care Website for Health Care Center</li>
+                <li itemprop="hasCredential">HostBuddy Website for AI-Powered Startup</li>
+                <li itemprop="hasCredential">PBOX Enterprises Website for Entertainment Company</li>
+                <li itemprop="hasCredential">SanMiguel Urgent Care Website for Health Care Center</li>
             </ul>
         </section>
 
         <section>
             <h3>Education</h3>
-            <p><strong>Bachelor of Science - BS, Computer Science</strong><br>Oct 2021 - May 2025<br>University of Sargodha, Sargodha</p>
+            <p itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                <strong itemprop="name">Bachelor of Science - BS, Computer Science</strong><br>
+                Oct 2021 - May 2025<br>
+                <span itemprop="name">University of Sargodha, Sargodha</span>
+            </p>
         </section>
 
         <section>
             <h3>Certificates</h3>
             <ul>
-                <li>Meta Front-End Developer, Sep 2022</li>
-                <li>WordSprint Hackathon</li>
-                <li>Gemini Ultra 1.0 Hackathon, Jun 2024</li>
+                <li itemprop="hasCredential">Meta Front-End Developer, Sep 2022</li>
+                <li itemprop="hasCredential">WordSprint Hackathon</li>
+                <li itemprop="hasCredential">Gemini Ultra 1.0 Hackathon, Jun 2024</li>
             </ul>
         </section>
     </div>
